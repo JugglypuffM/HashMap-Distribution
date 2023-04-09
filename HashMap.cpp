@@ -4,10 +4,22 @@
 
 #include "HashMap.h"
 
+using namespace std;
+
 HashMap::HashMap(int s, int b) {
     size = s;
     base = b;
-    for (int i = 0; i < s; ++i) {
-        storage[i] = new string[]
-    }
+    storage = new List[s];
+}
+
+void HashMap::add(string s) const {
+    storage[hash(s)].push_back(s);
+}
+
+int HashMap::hash(string s) const {
+    int result = 0;
+    for(int i = 0; i < s.size(); ++i)
+        result+= ((int)s[i]) * pow(base, i);
+    result %= size;
+    return result;
 }

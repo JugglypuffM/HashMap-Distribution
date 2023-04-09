@@ -4,6 +4,8 @@
 
 #include "iostream"
 #include "string"
+#include "cmath"
+#include "List.h"
 
 using namespace std;
 
@@ -13,9 +15,11 @@ using namespace std;
 
 class HashMap {
 public:
-    string** storage;
+    List* storage;
     int size, base;
     HashMap(int, int);
+    void add(string) const;
+    int hash(string) const;
 };
 
 
