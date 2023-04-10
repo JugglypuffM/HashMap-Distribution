@@ -18,6 +18,8 @@ public:
     List* storage;
     int size, base;
     HashMap(int, int);
+    ~HashMap();
+    void clear();
     void add(string) const;
     int hash(string) const;
 };

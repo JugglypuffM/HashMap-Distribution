@@ -23,3 +23,13 @@ int HashMap::hash(string s) const {
     result %= size;
     return result;
 }
+
+HashMap::~HashMap() {
+    clear();
+}
+
+void HashMap::clear() {
+    while (size){
+        storage[size-- -1].clear();
+    }
+}
