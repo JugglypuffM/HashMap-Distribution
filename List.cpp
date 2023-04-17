@@ -18,8 +18,12 @@ void List::push_back(string data) {
         head = new Node(data);
     } else {
         Node *current = this->head;
-        while (current->pNext != nullptr)
+        while (current->pNext != nullptr){
+            if (current->data == data){
+                return;
+            }
             current = current->pNext;
+        }
         current->pNext = new Node(data);
     }
     size++;

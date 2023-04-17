@@ -16,11 +16,11 @@ using namespace std;
 class HashMap {
 public:
     List* storage;
-    int size, base;
+    int size, base, amount;
     HashMap(int, int);
     ~HashMap();
     void clear();
-    void add(string) const;
+    void add(string);
     int hash(string) const;
 };
 

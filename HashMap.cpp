@@ -10,10 +10,15 @@ HashMap::HashMap(int s, int b) {
     size = s;
     base = b;
     storage = new List[s];
+    amount = 0;
 }
 
-void HashMap::add(string s) const {
+void HashMap::add(string s) {
+    int old = storage[hash(s)].size;
     storage[hash(s)].push_back(s);
+    if(old != storage[hash(s)].size){
+        amount++;
+    }
 }
 
 int HashMap::hash(string s) const {
