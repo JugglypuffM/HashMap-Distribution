@@ -10,9 +10,7 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="HashMap" targetName="HashMap" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -20,7 +18,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6d9aadb-a67f-437f-af5c-05d3741d2406" name="Changes" comment="Unique values" />
+    <list default="true" id="a6d9aadb-a67f-437f-af5c-05d3741d2406" name="Changes" comment="Extras">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,9 +65,9 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="HashMap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HashMap" TARGET_NAME="HashMap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HashMap" RUN_TARGET_NAME="HashMap">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -88,6 +88,7 @@
       <workItem from="1681664742043" duration="1832000" />
       <workItem from="1681711702872" duration="69000" />
       <workItem from="1682150536850" duration="93000" />
+      <workItem from="1682150644290" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="HashMap blank and List">
       <created>1680881340696</created>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681711747187</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Extras">
+      <created>1682150669458</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682150669458</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +151,8 @@
     <MESSAGE value="Task completed" />
     <MESSAGE value="Destructor" />
     <MESSAGE value="Unique values" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unique values" />
+    <MESSAGE value="Extras" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extras" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
