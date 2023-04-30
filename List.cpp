@@ -19,9 +19,6 @@ void List::push_back(string data) {
     } else {
         Node *current = this->head;
         while (current->pNext != nullptr){
-            if (current->data == data){
-                return;
-            }
             current = current->pNext;
         }
         current->pNext = new Node(data);
@@ -92,3 +89,19 @@ Node* List::reach_the_index(int index) const {
         previous = previous->pNext;
     return previous;
 }
+
+bool List::contains(string data) const {
+    if (head == nullptr) {
+        return false;
+    } else {
+        Node *current = this->head;
+        while (current->pNext != nullptr){
+            if(current->data == data){
+                return true;
+            }
+            current = current->pNext;
+        }
+    }
+    return false;
+}
+

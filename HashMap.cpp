@@ -14,9 +14,10 @@ HashMap::HashMap(int s, int b) {
 }
 
 void HashMap::add(string s) {
-    int old = storage[hash(s)].size;
-    storage[hash(s)].push_back(s);
-    if(old != storage[hash(s)].size){
+    if(this->contains(s)){
+        return;
+    }else{
+        storage[hash(s)].push_back(s);
         amount++;
     }
 }
@@ -38,3 +39,9 @@ void HashMap::clear() {
         storage[size-- -1].clear();
     }
 }
+
+bool HashMap::contains(string s) const {
+    return storage[hash(s)].contains(s);
+}
+
+

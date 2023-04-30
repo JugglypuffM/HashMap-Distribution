@@ -22,6 +22,7 @@ public:
     void clear();
     void add(string);
     int hash(string) const;
+    bool contains(string) const;
 };
 
 

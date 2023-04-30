@@ -38,6 +38,7 @@ public:
     string &operator[](int index) const;
     void setSize(int);
     Node *reach_the_index(int index) const;
+    bool contains(string data) const;
 };
 
 #endif //LIST_H
